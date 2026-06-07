@@ -1,14 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 :root {
-  --base-100: rgb(242, 237, 230);
-  --base-200: rgb(204, 200, 194);
-  --base-250: rgb(179, 167, 152);
-  --base-300: rgb(153, 143, 130);
-  --base-350: rgb(128, 119, 108);
-  --base-400: rgb(102, 95, 86);
-  --base-450: rgb(31, 29, 29);
-  --base-500: rgb(20, 19, 19);
+  --base-100: #F5F0E8;
+  --base-200: #E8E0D4;
+  --base-250: #C2A878;
+  --base-300: #A89070;
+  --base-350: #8A7560;
+  --base-400: #6B5D50;
+  --base-450: #2A2520;
+  --base-500: #1A1A1A;
+  --gold: #D4A853;
+  --gold-light: #E8C875;
 }
 
 * {
@@ -20,7 +22,7 @@
 
 body {
   font-family: "Manrope", sans-serif;
-  background-color: #0d0c0c;
+  background-color: #111111;
 }
 
 section,

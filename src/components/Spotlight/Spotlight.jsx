@@ -26,16 +26,16 @@ const Spotlight = () => {
   };
 
   const spotlightItems = [
-    { name: "Courtyard Stillness", img: "/spotlight/spotlight-img-1.jpg" },
-    { name: "Blue Horizon", img: "/spotlight/spotlight-img-2.jpg" },
-    { name: "Stone Quiet", img: "/spotlight/spotlight-img-3.jpg" },
-    { name: "Amber Niche", img: "/spotlight/spotlight-img-4.jpg" },
-    { name: "Earthen Shelf", img: "/spotlight/spotlight-img-5.jpg" },
-    { name: "Reflective White", img: "/spotlight/spotlight-img-6.jpg" },
-    { name: "Desert Edge", img: "/spotlight/spotlight-img-7.jpg" },
-    { name: "Soft Passage", img: "/spotlight/spotlight-img-8.jpg" },
-    { name: "Water Column", img: "/spotlight/spotlight-img-9.jpg" },
-    { name: "Golden Retreat", img: "/spotlight/spotlight-img-10.jpg" },
+    { name: "Villa de Luxe", img: "/spotlight/spotlight-img-1.jpg" },
+    { name: "Appartement Standing", img: "/spotlight/spotlight-img-2.jpg" },
+    { name: "Riad Traditionnel", img: "/spotlight/spotlight-img-3.jpg" },
+    { name: "Terrain Titré", img: "/spotlight/spotlight-img-4.jpg" },
+    { name: "Duplex Moderne", img: "/spotlight/spotlight-img-5.jpg" },
+    { name: "Penthouse Vue Mer", img: "/spotlight/spotlight-img-6.jpg" },
+    { name: "Local Commercial", img: "/spotlight/spotlight-img-7.jpg" },
+    { name: "Maison de Charme", img: "/spotlight/spotlight-img-8.jpg" },
+    { name: "Studio Meublé", img: "/spotlight/spotlight-img-9.jpg" },
+    { name: "Villa Pieds dans l'Eau", img: "/spotlight/spotlight-img-10.jpg" },
   ];
 
   useEffect(() => {
@@ -284,13 +284,13 @@ const Spotlight = () => {
             className="spotlight-intro-text"
             ref={(el) => (introTextElementsRef.current[0] = el)}
           >
-            <p>Beneath</p>
+            <p>Découvrir</p>
           </div>
           <div
             className="spotlight-intro-text"
             ref={(el) => (introTextElementsRef.current[1] = el)}
           >
-            <p>Beyond</p>
+            <p>Explorer</p>
           </div>
         </div>
         <div className="spotlight-bg-img">
@@ -305,7 +305,7 @@ const Spotlight = () => {
       </div>
       <div className="spotlight-images" ref={imagesContainerRef}></div>
       <div className="spotlight-header" ref={spotlightHeaderRef}>
-        <p>Discover</p>
+        <p>Découvrir</p>
       </div>
       <div className="spotlight-outline"></div>
     </section>

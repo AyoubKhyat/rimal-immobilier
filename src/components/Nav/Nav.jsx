@@ -232,7 +232,7 @@ const Nav = () => {
             <div className="links">
               <div className="link">
                 <a href="/" onClick={(e) => handleLinkClick(e, "/")}>
-                  <h2>Index</h2>
+                  <h2>Accueil</h2>
                 </a>
               </div>
               <div className="link">
@@ -240,7 +240,7 @@ const Nav = () => {
                   href="/studio"
                   onClick={(e) => handleLinkClick(e, "/studio")}
                 >
-                  <h2>Studio</h2>
+                  <h2>À Propos</h2>
                 </a>
               </div>
               <div className="link">
@@ -248,7 +248,7 @@ const Nav = () => {
                   href="/spaces"
                   onClick={(e) => handleLinkClick(e, "/spaces")}
                 >
-                  <h2>Our Spaces</h2>
+                  <h2>Nos Biens</h2>
                 </a>
               </div>
               <div className="link">
@@ -256,7 +256,7 @@ const Nav = () => {
                   href="/sample-space"
                   onClick={(e) => handleLinkClick(e, "/sample-space")}
                 >
-                  <h2>One Installation</h2>
+                  <h2>Services</h2>
                 </a>
               </div>
               <div className="link">
@@ -264,7 +264,7 @@ const Nav = () => {
                   href="/blueprints"
                   onClick={(e) => handleLinkClick(e, "/blueprints")}
                 >
-                  <h2>Blueprints</h2>
+                  <h2>Galerie</h2>
                 </a>
               </div>
               <div className="link">
@@ -272,7 +272,7 @@ const Nav = () => {
                   href="/connect"
                   onClick={(e) => handleLinkClick(e, "/connect")}
                 >
-                  <h2>Connect</h2>
+                  <h2>Contact</h2>
                 </a>
               </div>
             </div>
@@ -281,21 +281,21 @@ const Nav = () => {
             <div className="socials">
               <div className="sub-col">
                 <div className="menu-meta menu-commissions">
-                  <p>Commissions</p>
-                  <p>build@terrene.studio</p>
-                  <p>+1 (872) 441‑2086</p>
+                  <p>Contact</p>
+                  <p>contact@rimal-immobilier.ma</p>
+                  <p>+212 X XX XX XX XX</p>
                 </div>
                 <div className="menu-meta">
-                  <p>Studio Address</p>
-                  <p>18 Cordova Lane</p>
-                  <p>Seattle, WA 98101</p>
+                  <p>Adresse</p>
+                  <p>Adresse à confirmer</p>
+                  <p>Maroc</p>
                 </div>
               </div>
               <div className="sub-col">
                 <div className="menu-meta">
                   <p>Social</p>
                   <p>Instagram</p>
-                  <p>Are.na</p>
+                  <p>Facebook</p>
                   <p>LinkedIn</p>
                 </div>
               </div>

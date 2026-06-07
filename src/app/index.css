@@ -3,7 +3,7 @@
   width: 100%;
   height: 135svh;
   overflow: hidden;
-  background-color: #d3cec5;
+  background-color: #C2A878;
 }
 
 .hero .hero-bg {
@@ -21,11 +21,11 @@
   left: 0;
   width: 100%;
   height: 50svh;
-  background: #1a1818;
+  background: #1a1a1a;
   background: linear-gradient(
     360deg,
-    rgba(20, 19, 19, 1) 0%,
-    rgba(20, 19, 19, 0) 100%
+    rgba(26, 26, 26, 1) 0%,
+    rgba(26, 26, 26, 0) 100%
   );
   z-index: 2;
 }
@@ -71,7 +71,7 @@
   padding: 1rem;
   aspect-ratio: 16/9;
   color: var(--base-200);
-  background-color: rgba(242, 237, 230, 0.1);
+  background-color: rgba(245, 240, 232, 0.08);
   backdrop-filter: blur(1rem);
   border-radius: 1rem;
   overflow: hidden;
@@ -166,7 +166,7 @@
   display: inline-block;
   padding: 1rem 2rem;
   margin: 0 0.5rem 0.5rem 0;
-  border: 1px solid var(--base-400);
+  border: 1px solid rgba(212, 168, 83, 0.3);
   border-radius: 4rem;
 }
 
@@ -305,7 +305,7 @@
   bottom: 1rem;
   left: 1rem;
   padding: 1rem;
-  background-color: rgba(20, 19, 19, 0.25);
+  background-color: rgba(26, 26, 26, 0.3);
   backdrop-filter: blur(15px);
   color: var(--base-100);
   border-radius: 0.75rem;

@@ -171,11 +171,11 @@ export default function Home() {
           <div className="intro-logo">
             <div className="word" id="word-1">
               <h1>
-                <span>Terrene</span>
+                <span>Rimal</span>
               </h1>
             </div>
             <div className="word" id="word-2">
-              <h1>Balance</h1>
+              <h1>Immobilier</h1>
             </div>
           </div>
           <div className="divider"></div>
@@ -236,22 +236,29 @@ export default function Home() {
           <div className="hero-content">
             <div className="hero-header">
               <Copy animateOnScroll={false} delay={showPreloader ? 10 : 0.85}>
-                <h1>Spaces that feel rooted, human, and quietly bold</h1>
+                <h1>Votre partenaire immobilier de confiance au Maroc</h1>
               </Copy>
             </div>
             <div className="hero-tagline">
               <Copy animateOnScroll={false} delay={showPreloader ? 10.15 : 1}>
                 <p>
-                  At Terrene, we shape environments that elevate daily life,
-                  invite pause, and speak through texture and light.
+                  Rimal Immobilier Maroc accompagne ses clients dans leurs
+                  projets d&apos;achat, de vente, de location et
+                  d&apos;investissement immobilier.
                 </p>
               </Copy>
             </div>
             <AnimatedButton
-              label="Discover More"
-              route="/studio"
+              label="Découvrir nos biens"
+              route="/spaces"
               animateOnScroll={false}
               delay={showPreloader ? 10.3 : 1.15}
+            />
+            <AnimatedButton
+              label="Nous contacter"
+              route="/connect"
+              animateOnScroll={false}
+              delay={showPreloader ? 10.45 : 1.3}
             />
           </div>
         </div>
@@ -260,39 +267,39 @@ export default function Home() {
             <div className="stat">
               <div className="stat-count">
                 <Copy delay={0.1}>
-                  <h2>225+</h2>
+                  <h2>500+</h2>
                 </Copy>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-info">
                 <Copy delay={0.15}>
-                  <p>Completed design studies</p>
+                  <p>Biens vendus et loués</p>
                 </Copy>
               </div>
             </div>
             <div className="stat">
               <div className="stat-count">
                 <Copy delay={0.2}>
-                  <h2>36</h2>
+                  <h2>15+</h2>
                 </Copy>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-info">
                 <Copy delay={0.25}>
-                  <p>Ongoing spatial explorations</p>
+                  <p>Années d&apos;expérience</p>
                 </Copy>
               </div>
             </div>
             <div className="stat">
               <div className="stat-count">
                 <Copy delay={0.3}>
-                  <h2>12</h2>
+                  <h2>8</h2>
                 </Copy>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-info">
                 <Copy delay={0.35}>
-                  <p>Cross-disciplinary collaborators</p>
+                  <p>Conseillers experts</p>
                 </Copy>
               </div>
             </div>
@@ -305,7 +312,7 @@ export default function Home() {
               <div className="stat-divider"></div>
               <div className="stat-info">
                 <Copy delay={0.45}>
-                  <p>Return rate across commissions</p>
+                  <p>Clients satisfaits</p>
                 </Copy>
               </div>
             </div>
@@ -318,46 +325,45 @@ export default function Home() {
             <Copy delay={0.1}>
               <h1>
                 <span className="spacer">&nbsp;</span>
-                At Terrene, we design with purpose and clarity, creating spaces
-                that speak through light, scale, and the quiet confidence of
-                lasting form.
+                Chez Rimal Immobilier, nous mettons notre expertise au service
+                de vos projets immobiliers, avec un accompagnement personnalisé
+                et une transparence totale.
               </h1>
             </Copy>
           </div>
           <div className="what-we-do-content">
             <div className="what-we-do-col">
               <Copy delay={0.1}>
-                <p>How we work</p>
+                <p>Notre approche</p>
               </Copy>
 
               <Copy delay={0.15}>
                 <p className="lg">
-                  We approach each build with a clarity of intent. Every plan is
-                  shaped through research, iteration, and conversation. What
-                  remains is the essential, designed to last and built to feel
-                  lived in.
+                  Nous accompagnons chaque client avec rigueur et transparence.
+                  Chaque projet est étudié en profondeur pour offrir les
+                  meilleures opportunités du marché immobilier marocain.
                 </p>
               </Copy>
             </div>
             <div className="what-we-do-col">
               <div className="what-we-do-tags" ref={tagsRef}>
                 <div className="what-we-do-tag">
-                  <h3>Quiet</h3>
+                  <h3>Accompagnement</h3>
                 </div>
                 <div className="what-we-do-tag">
-                  <h3>View</h3>
+                  <h3>Transparence</h3>
                 </div>
                 <div className="what-we-do-tag">
-                  <h3>Tactile</h3>
+                  <h3>Expertise</h3>
                 </div>
                 <div className="what-we-do-tag">
-                  <h3>Light-forward</h3>
+                  <h3>Service personnalisé</h3>
                 </div>
                 <div className="what-we-do-tag">
-                  <h3>Slow design</h3>
+                  <h3>Réactivité</h3>
                 </div>
                 <div className="what-we-do-tag">
-                  <h3>Modular rhythm</h3>
+                  <h3>Confiance</h3>
                 </div>
               </div>
             </div>
@@ -368,12 +374,12 @@ export default function Home() {
         <div className="container">
           <div className="featured-projects-header-callout">
             <Copy delay={0.1}>
-              <p>Featured work</p>
+              <p>Nos biens en vedette</p>
             </Copy>
           </div>
           <div className="featured-projects-header">
             <Copy delay={0.15}>
-              <h2>A selection of recent studies and completed spaces</h2>
+              <h2>Une sélection de biens immobiliers d&apos;exception</h2>
             </Copy>
           </div>
         </div>
@@ -382,7 +388,7 @@ export default function Home() {
       <section className="client-reviews-container">
         <div className="container">
           <div className="client-reviews-header-callout">
-            <p>Voices from our spaces</p>
+            <p>Ce que disent nos clients</p>
           </div>
           <ClientReviews />
         </div>
@@ -397,8 +403,8 @@ export default function Home() {
               <div className="gallery-callout-img gallery-callout-img-2">
                 <img src="/gallery-callout/gallery-callout-2.jpg" alt="" />
                 <div className="gallery-callout-img-content">
-                  <h3>800+</h3>
-                  <p>Project Images</p>
+                  <h3>4</h3>
+                  <p>Raisons de nous choisir</p>
                 </div>
               </div>
             </div>
@@ -415,22 +421,20 @@ export default function Home() {
             <div className="gallery-callout-copy">
               <Copy delay={0.1}>
                 <h3>
-                  Take a closer look at the projects that define our practice.
-                  From intimate interiors to expansive landscapes, each image
-                  highlights a unique perspective that might spark your next big
-                  idea.
+                  Découvrez pourquoi nos clients nous font confiance pour leurs
+                  projets immobiliers les plus ambitieux au Maroc.
                 </h3>
               </Copy>
-              <AnimatedButton label="Explore Gallery" route="blueprints" />
+              <AnimatedButton label="En savoir plus" route="/studio" />
             </div>
           </div>
         </div>
       </section>
       <CTAWindow
         img="/home/home-cta-window.jpg"
-        header="Terrene"
-        callout="Spaces that breathe with time"
-        description="Our approach is guided by rhythm, proportion, and light, allowing every environment to grow more meaningful as it is lived in."
+        header="Rimal"
+        callout="L'immobilier d'exception au Maroc"
+        description="Notre approche est guidée par l'excellence, la transparence et le service personnalisé, pour que chaque projet immobilier devienne une réussite."
       />
       <ConditionalFooter />
     </>

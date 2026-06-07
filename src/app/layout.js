@@ -3,13 +3,19 @@ import ClientLayout from "@/client-layout";
 import TopBar from "@/components/TopBar/TopBar";
 
 export const metadata = {
-  title: "Terrene | MWT by Codegrid ",
-  description: "Monthly Website Template by Codegrid | August 2025",
+  title: "Rimal Immobilier Maroc",
+  description:
+    "Rimal Immobilier Maroc accompagne particuliers et investisseurs dans leurs projets immobiliers au Maroc.",
+  openGraph: {
+    title: "Rimal Immobilier Maroc",
+    description:
+      "Rimal Immobilier Maroc accompagne particuliers et investisseurs dans leurs projets immobiliers au Maroc.",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body>
         <ClientLayout>
           <TopBar />

@@ -77,3 +77,138 @@
     font-size: 3rem;
   }
 }
+
+.contact-form-section {
+  position: relative;
+  width: 100%;
+  padding: 6rem 0;
+  color: var(--base-200);
+}
+
+.contact-form-section .contact-form-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-form-section .contact-form-header h2 {
+  margin-bottom: 1rem;
+  color: var(--base-100);
+}
+
+.contact-form-section .contact-form-header p {
+  color: var(--base-300);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--base-300);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background-color: var(--base-450);
+  border: 1px solid rgba(194, 168, 120, 0.15);
+  border-radius: 0.75rem;
+  color: var(--base-100);
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--base-400);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+}
+
+.form-group select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23A89070' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.form-group select option {
+  background-color: var(--base-450);
+  color: var(--base-100);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  align-self: flex-start;
+  padding: 1rem 3rem;
+  background-color: var(--gold);
+  color: var(--base-500);
+  border: none;
+  border-radius: 4rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.form-submit:hover {
+  background-color: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1000px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-submit {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-form-section {
+    padding: 4rem 0;
+  }
+}

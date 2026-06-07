@@ -18,18 +18,18 @@ const page = () => {
             <div className="studio-hero-col">
               <Copy delay={0.85}>
                 <p>
-                  We see design as more than construction. It is an ongoing
-                  dialogue between people, material, and place, shaped with
-                  care, and built to endure.
+                  Rimal Immobilier Maroc est une agence immobilière de confiance,
+                  spécialisée dans l&apos;accompagnement des particuliers et
+                  investisseurs dans leurs projets immobiliers au Maroc.
                 </p>
               </Copy>
             </div>
             <div className="studio-hero-col">
               <Copy delay={0.85}>
                 <h2>
-                  Our studio exists to create spaces that feel honest, lived in,
-                  and quietly transformative. Every project begins with
-                  listening and ends with an environment.
+                  À Propos de Rimal Immobilier Maroc — Notre mission est de vous
+                  offrir un accompagnement personnalisé à chaque étape de votre
+                  projet immobilier, avec expertise et transparence.
                 </h2>
               </Copy>
               <div className="studio-hero-hero-img">
@@ -43,32 +43,32 @@ const page = () => {
             <div className="more-facts-items">
               <div className="fact">
                 <Copy delay={0.1}>
-                  <p>Models crafted</p>
-                  <h2>120+</h2>
+                  <p>Accompagnement personnalisé</p>
+                  <h2>Achat</h2>
                 </Copy>
               </div>
               <div className="fact">
                 <Copy delay={0.2}>
-                  <p>Materials explored</p>
-                  <h2>60</h2>
+                  <p>Expertise du marché</p>
+                  <h2>Vente</h2>
                 </Copy>
               </div>
               <div className="fact">
                 <Copy delay={0.3}>
-                  <p>Workshops hosted</p>
-                  <h2>25+</h2>
+                  <p>Transparence totale</p>
+                  <h2>Location</h2>
                 </Copy>
               </div>
               <div className="fact">
                 <Copy delay={0.4}>
-                  <p>Hours logged</p>
-                  <h2>3k+</h2>
+                  <p>Réactivité</p>
+                  <h2>Estimation</h2>
                 </Copy>
               </div>
               <div className="fact">
                 <Copy delay={0.5}>
-                  <p>Prototypes build</p>
-                  <h2>724</h2>
+                  <p>Conseil en Investissement</p>
+                  <h2>Conseil</h2>
                 </Copy>
               </div>
             </div>
@@ -81,9 +81,9 @@ const page = () => {
         </section>
         <CTAWindow
           img="/studio/about-cta-window.jpg"
-          header="The Archive"
-          callout="Designs that speak through form"
-          description="Each project tells a story of light, material, and rhythm. Explore how ideas take shape and grow into lasting environments."
+          header="Nos Biens"
+          callout="Des propriétés qui parlent d'elles-mêmes"
+          description="Chaque bien raconte une histoire unique. Découvrez notre sélection de propriétés soigneusement choisies à travers le Maroc."
         />
         <Spotlight />
       </div>

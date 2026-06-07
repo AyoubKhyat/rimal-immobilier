@@ -1,30 +1,30 @@
 const featuredProjectsContent = [
   {
-    info: "An immersive lounge built around a central tree",
-    title: "Sanctum Hall",
+    info: "Villa de luxe avec piscine et jardin paysager",
+    title: "Villa Moderne",
     description:
-      "Circular seating, arched openings, and natural textures create a serene gathering space. The design balances monumentality with intimacy, framing nature as the focal point.",
+      "Une villa d'exception alliant architecture contemporaine et confort absolu. Espaces lumineux, finitions haut de gamme et vue panoramique.",
     image: "/featured-projects/featured-work-1.jpg",
   },
   {
-    info: "A private retreat defined by water and sun",
-    title: "Desert Poolhouse",
+    info: "Appartement haut standing en centre-ville",
+    title: "Appartement Haut Standing",
     description:
-      "Soft stucco walls, a lone palm, and an open sky bring elemental simplicity. The still surface of the pool becomes both mirror and threshold, blurring enclosure and openness.",
+      "Un appartement prestigieux au cœur de la ville, offrant des prestations de qualité supérieure et un cadre de vie raffiné.",
     image: "/featured-projects/featured-work-2.jpg",
   },
   {
-    info: "A cloister-inspired courtyard with generous arches",
-    title: "Arcade Residence",
+    info: "Terrain titré avec emplacement stratégique",
+    title: "Terrain Titré",
     description:
-      "Rhythmic colonnades and layered seating zones encourage calm gatherings. Textured stone and filtered light evoke both permanence and ease, rooted in classical geometry.",
+      "Un terrain idéalement situé, parfait pour un projet de construction résidentiel ou commercial. Titre foncier en règle.",
     image: "/featured-projects/featured-work-3.jpg",
   },
   {
-    info: "A refined interior anchored by symmetry and light",
-    title: "Atrium Gallery",
+    info: "Local commercial dans un quartier d'affaires",
+    title: "Local Commercial",
     description:
-      "A quiet procession of columns and a sculptural centerpiece guide the eye toward framed views. Warm plaster walls and soft daylight create a setting of contemplative elegance.",
+      "Un espace commercial premium, idéal pour bureaux ou commerce, situé dans une zone à fort potentiel économique.",
     image: "/featured-projects/featured-work-4.jpg",
   },
 ];

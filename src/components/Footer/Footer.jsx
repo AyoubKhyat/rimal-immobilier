@@ -12,8 +12,8 @@ import Copy from "../Copy/Copy";
 
 import { RiLinkedinBoxLine } from "react-icons/ri";
 import { RiInstagramLine } from "react-icons/ri";
-import { RiDribbbleLine } from "react-icons/ri";
-import { RiYoutubeLine } from "react-icons/ri";
+import { RiFacebookBoxLine } from "react-icons/ri";
+import { RiWhatsappLine } from "react-icons/ri";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,11 +52,11 @@ const Footer = () => {
             <div className="footer-meta-block">
               <div className="footer-meta-logo">
                 <Copy delay={0.1}>
-                  <h3 className="lg">Terrene</h3>
+                  <h3 className="lg">Rimal Immobilier</h3>
                 </Copy>
               </div>
               <Copy delay={0.2}>
-                <h2>Spaces made simple, thoughtful, lasting.</h2>
+                <h2>L&apos;immobilier de confiance au Maroc.</h2>
               </Copy>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Footer = () => {
                     navigateWithTransition("/");
                   }}
                 >
-                  <h3>Index</h3>
+                  <h3>Accueil</h3>
                 </a>
                 <a
                   href="/studio"
@@ -79,7 +79,7 @@ const Footer = () => {
                     navigateWithTransition("/studio");
                   }}
                 >
-                  <h3>Studio</h3>
+                  <h3>À Propos</h3>
                 </a>
                 <a
                   href="/spaces"
@@ -88,7 +88,7 @@ const Footer = () => {
                     navigateWithTransition("/spaces");
                   }}
                 >
-                  <h3>Our Spaces</h3>
+                  <h3>Nos Biens</h3>
                 </a>
                 <a
                   href="/sample-space"
@@ -97,7 +97,7 @@ const Footer = () => {
                     navigateWithTransition("/sample-space");
                   }}
                 >
-                  <h3>One Installation</h3>
+                  <h3>Services</h3>
                 </a>
                 <a
                   href="/blueprints"
@@ -106,7 +106,7 @@ const Footer = () => {
                     navigateWithTransition("/blueprints");
                   }}
                 >
-                  <h3>Blueprints</h3>
+                  <h3>Galerie</h3>
                 </a>
                 <a
                   href="/connect"
@@ -115,7 +115,7 @@ const Footer = () => {
                     navigateWithTransition("/connect");
                   }}
                 >
-                  <h3>Connect</h3>
+                  <h3>Contact</h3>
                 </a>
               </Copy>
             </div>
@@ -131,18 +131,17 @@ const Footer = () => {
                 <RiInstagramLine />
               </div>
               <div className="icon">
-                <RiDribbbleLine />
+                <RiFacebookBoxLine />
               </div>
               <div className="icon">
-                <RiYoutubeLine />
+                <RiWhatsappLine />
               </div>
             </div>
           </div>
           <div className="footer-meta-col">
             <Copy delay={0.1}>
               <p>
-                We believe design is not decoration but the quiet structure that
-                shapes experience.
+                Votre partenaire de confiance pour tous vos projets immobiliers au Maroc.
               </p>
             </Copy>
           </div>
@@ -151,14 +150,14 @@ const Footer = () => {
       <div className="footer-outro">
         <div className="container">
           <div className="footer-header">
-            <img src="/logos/terrene-footer-logo.svg" alt="" />
+            <h1>RIMAL IMMOBILIER</h1>
           </div>
           <div className="footer-copyright">
             <p>
-              Developed by — <span>Codegrid</span>
+              &copy; 2026 Rimal Immobilier Maroc
             </p>
-            <p>This website is using cookies.</p>
-            <p>All rights reserverd &copy; 2025</p>
+            <p>Tous droits réservés</p>
+            <p>rimal-immobilier.ma</p>
           </div>
         </div>
       </div>

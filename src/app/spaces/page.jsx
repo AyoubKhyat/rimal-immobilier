@@ -13,7 +13,7 @@ import { useViewTransition } from "@/hooks/useViewTransition";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const page = () => {
+const Page = () => {
   const spacesRef = useRef(null);
   const scrollTriggerInstances = useRef([]);
   const { navigateWithTransition } = useViewTransition();
@@ -95,17 +95,17 @@ const page = () => {
             <div className="prop-col"></div>
             <div className="prop-col">
               <Copy delay={1}>
-                <h1>Timeless Spaces</h1>
+                <h1>Nos Biens Immobiliers</h1>
               </Copy>
               <div className="prop-filters">
                 <div className="filter default">
                   <Copy delay={1}>
-                    <p className="lg">All</p>
+                    <p className="lg">Tous</p>
                   </Copy>
                 </div>
                 <div className="filter">
                   <Copy delay={1.1}>
-                    <p className="lg">Residential</p>
+                    <p className="lg">Résidentiel</p>
                   </Copy>
                 </div>
                 <div className="filter">
@@ -115,7 +115,7 @@ const page = () => {
                 </div>
                 <div className="filter">
                   <Copy delay={1.3}>
-                    <p className="lg">Hospitality</p>
+                    <p className="lg">Terrain</p>
                   </Copy>
                 </div>
               </div>
@@ -172,4 +172,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

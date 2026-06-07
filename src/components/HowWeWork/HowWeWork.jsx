@@ -112,13 +112,13 @@ const HowWeWork = () => {
           <div className="how-we-work-header-content">
             <div className="how-we-work-header-callout">
               <Copy delay={0.1}>
-                <p>Process in focus</p>
+                <p>Notre démarche</p>
               </Copy>
             </div>
             <Copy delay={0.15}>
               <h3>
-                From first sketches to final details, our process is shaped to
-                bring clarity and rhythm
+                De la première consultation à la remise des clés, notre
+                accompagnement est conçu pour vous apporter clarté et sérénité
               </h3>
             </Copy>
             <div className="how-we-work-steps" ref={stepsRef}>
@@ -127,7 +127,7 @@ const HowWeWork = () => {
                   activeStep === 0 ? "active" : ""
                 }`}
               >
-                <p className="how-we-work-step-label">Step</p>
+                <p className="how-we-work-step-label">Étape</p>
                 <p className="how-we-work-step-index">1</p>
               </div>
               <div
@@ -135,7 +135,7 @@ const HowWeWork = () => {
                   activeStep === 1 ? "active" : ""
                 }`}
               >
-                <p className="how-we-work-step-label">Step</p>
+                <p className="how-we-work-step-label">Étape</p>
                 <p className="how-we-work-step-index">2</p>
               </div>
               <div
@@ -143,7 +143,7 @@ const HowWeWork = () => {
                   activeStep === 2 ? "active" : ""
                 }`}
               >
-                <p className="how-we-work-step-label">Step</p>
+                <p className="how-we-work-step-label">Étape</p>
                 <p className="how-we-work-step-index">3</p>
               </div>
               <div
@@ -151,7 +151,7 @@ const HowWeWork = () => {
                   activeStep === 3 ? "active" : ""
                 }`}
               >
-                <p className="how-we-work-step-label">Step</p>
+                <p className="how-we-work-step-label">Étape</p>
                 <p className="how-we-work-step-index">4</p>
               </div>
             </div>
@@ -165,12 +165,12 @@ const HowWeWork = () => {
           </div>
           <div className="how-we-work-card-copy">
             <div className="how-we-work-card-index-label">
-              <h3>Discovery / Context</h3>
+              <h3>Écoute / Analyse</h3>
             </div>
             <p className="md">
-              We begin with listening and study. Site, climate, and daily
-              routines inform the brief so we can define aims, constraints, and
-              measures of success with clarity.
+              Nous commençons par écouter vos besoins et analyser votre projet.
+              Votre budget, vos critères et vos objectifs nous permettent de
+              définir une stratégie claire et personnalisée.
             </p>
           </div>
         </div>
@@ -180,12 +180,12 @@ const HowWeWork = () => {
           </div>
           <div className="how-we-work-card-copy">
             <div className="how-we-work-card-index-label">
-              <h3>Principles / Direction</h3>
+              <h3>Recherche / Sélection</h3>
             </div>
             <p className="md">
-              We set guiding principles for light, massing, and flow. Quick
-              models and diagrams test options and reveal the direction that
-              best serves the brief.
+              Nous recherchons les biens correspondant à vos critères et
+              effectuons une présélection rigoureuse. Chaque bien est vérifié
+              et évalué avant de vous être présenté.
             </p>
           </div>
         </div>
@@ -195,12 +195,12 @@ const HowWeWork = () => {
           </div>
           <div className="how-we-work-card-copy">
             <div className="how-we-work-card-index-label">
-              <h3>Detail / Coordination</h3>
+              <h3>Négociation / Accompagnement</h3>
             </div>
             <p className="md">
-              We develop drawings and specifications across structure, services,
-              and joinery. Materials and samples are reviewed in natural light
-              while budget and timeline stay in view.
+              Nous négocions les meilleures conditions pour vous et coordonnons
+              toutes les étapes administratives. Notaires, banques et
+              démarches légales sont gérés avec rigueur.
             </p>
           </div>
         </div>
@@ -210,12 +210,12 @@ const HowWeWork = () => {
           </div>
           <div className="how-we-work-card-copy">
             <div className="how-we-work-card-index-label">
-              <h3>Build / Handover</h3>
+              <h3>Finalisation / Remise des clés</h3>
             </div>
             <p className="md">
-              We oversee construction with care and precision. After final
-              review and finishing, we hand over a space that is ready to live
-              in, complete with guidance for long term care.
+              Nous supervisons la finalisation de votre transaction avec soin
+              et précision. Après vérification et signature, nous vous
+              remettons les clés de votre nouveau bien.
             </p>
           </div>
         </div>
