@@ -97,13 +97,6 @@ export default function Home() {
         "<"
       );
 
-      tl.to(".divider", {
-        scaleY: "100%",
-        duration: 1,
-        onComplete: () =>
-          gsap.to(".divider", { opacity: 0, duration: 0.3, delay: 0.3 }),
-      });
-
       tl.to("#word-1 h1", {
         y: "100%",
         duration: 1,
@@ -251,7 +244,6 @@ export default function Home() {
               <h1>Immobilier</h1>
             </div>
           </div>
-          <div className="divider"></div>
           <div className="spinner-container">
             <div className="spinner"></div>
           </div>

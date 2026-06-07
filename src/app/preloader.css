@@ -30,20 +30,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
-.loader #word-1 {
-  position: relative;
-  left: 0rem;
-  padding-right: 0.25rem;
-  color: var(--base-100);
-}
-
+.loader #word-1,
 .loader #word-2 {
   position: relative;
-  left: 0.5rem;
-  padding-right: 0.25rem;
   color: var(--base-100);
 }
 
@@ -51,17 +45,6 @@
   font-size: 2rem;
   color: var(--base-300);
   letter-spacing: -0.05rem;
-}
-
-.loader .divider {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transform-origin: center top;
-  width: 1px;
-  height: 100%;
-  background-color: rgba(242, 237, 230, 0.125);
 }
 
 .loader .spinner-container {
@@ -137,11 +120,6 @@
 
 .loader .block {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.loader .divider {
-  transform: scaleY(0%);
-  will-change: transform;
 }
 
 @media (max-width: 1000px) {
