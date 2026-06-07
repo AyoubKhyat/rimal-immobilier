@@ -76,7 +76,7 @@ const TopBar = () => {
             navigateWithTransition("/");
           }}
         >
-          <span style={{ fontSize: '1.2rem', fontWeight: 700, color: '#F5F0E8', letterSpacing: '-0.02em' }}>RI</span>
+          <img src="/rimal-logo.jpg" alt="Rimal Immobilier" style={{ borderRadius: '0.25rem' }} />
         </a>
       </div>
       <div className="top-bar-cta">

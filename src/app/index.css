@@ -3,7 +3,7 @@
   width: 100%;
   height: 135svh;
   overflow: hidden;
-  background-color: #C2A878;
+  background-color: #1a1a1a;
 }
 
 .hero .hero-bg {
@@ -13,6 +13,27 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
+}
+
+.hero .hero-bg img {
+  object-position: center 30%;
+}
+
+.hero .hero-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 26, 26, 0.55) 0%,
+    rgba(26, 26, 26, 0.3) 40%,
+    rgba(26, 26, 26, 0.5) 70%,
+    rgba(26, 26, 26, 0.85) 100%
+  );
+  z-index: 1;
 }
 
 .hero .hero-gradient {
@@ -44,6 +65,11 @@
   align-items: center;
   gap: 2rem;
   padding: 1rem;
+  z-index: 3;
+}
+
+.hero .hero-content .hero-header h1 {
+  text-shadow: 0 2px 40px rgba(0, 0, 0, 0.3);
 }
 
 .hero .hero-tagline {
@@ -51,11 +77,18 @@
   color: var(--base-200);
 }
 
+.hero .hero-gold-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto;
+}
+
 .hero .hero-stats {
   position: absolute;
   bottom: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .hero .hero-stats .container {
@@ -71,8 +104,9 @@
   padding: 1rem;
   aspect-ratio: 16/9;
   color: var(--base-200);
-  background-color: rgba(245, 240, 232, 0.08);
-  backdrop-filter: blur(1rem);
+  background-color: rgba(26, 26, 26, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 168, 83, 0.1);
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -82,10 +116,14 @@
   flex: 1;
 }
 
+.hero .hero-stats .stat-count h2 {
+  color: var(--gold-light);
+}
+
 .hero .hero-stats .stat-divider {
   width: 100%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(90deg, transparent, rgba(212, 168, 83, 0.2), transparent);
 }
 
 .hero .hero-stats .stat-info {

@@ -160,6 +160,22 @@ export default function Home() {
     { scope: tagsRef }
   );
 
+  useGSAP(() => {
+    const heroBg = document.querySelector(".hero-bg img");
+    if (!heroBg) return;
+
+    gsap.to(heroBg, {
+      yPercent: 15,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+  });
+
   return (
     <>
       {showPreloader && (
@@ -229,7 +245,7 @@ export default function Home() {
       <Nav />
       <section className="hero">
         <div className="hero-bg">
-          <img src="/home/hero.jpg" alt="" />
+          <img src="/home/hero.jpg" alt="Résidence Rimal Marrakech" />
         </div>
         <div className="hero-gradient"></div>
         <div className="container">
@@ -248,6 +264,7 @@ export default function Home() {
                 </p>
               </Copy>
             </div>
+            <div className="hero-gold-line"></div>
             <AnimatedButton
               label="Découvrir nos biens"
               route="/spaces"
