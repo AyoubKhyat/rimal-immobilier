@@ -16,6 +16,7 @@ import FeaturedProjects from "@/components/FeaturedProjects/FeaturedProjects";
 import ClientReviews from "@/components/ClientReviews/ClientReviews";
 import CTAWindow from "@/components/CTAWindow/CTAWindow";
 import Copy from "@/components/Copy/Copy";
+import { useViewTransition } from "@/hooks/useViewTransition";
 
 let isInitialLoad = true;
 gsap.registerPlugin(ScrollTrigger, CustomEase);
@@ -26,6 +27,7 @@ export default function Home() {
   const [showPreloader, setShowPreloader] = useState(isInitialLoad);
   const [loaderAnimating, setLoaderAnimating] = useState(false);
   const lenis = useLenis();
+  const { navigateWithTransition } = useViewTransition();
 
   useEffect(() => {
     return () => {
@@ -176,6 +178,61 @@ export default function Home() {
     });
   });
 
+  useGSAP(() => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    if (!menuToggle) return;
+
+    gsap.set(menuToggle, { autoAlpha: 0 });
+
+    ScrollTrigger.create({
+      trigger: ".hero",
+      start: "80% top",
+      onLeave: () =>
+        gsap.to(menuToggle, {
+          autoAlpha: 1,
+          duration: 0.4,
+          ease: "power2.out",
+        }),
+      onEnterBack: () =>
+        gsap.to(menuToggle, {
+          autoAlpha: 0,
+          duration: 0.3,
+          ease: "power2.in",
+        }),
+    });
+  });
+
+  useGSAP(
+    () => {
+      const ctaButtons = document.querySelector(".hero-cta-buttons");
+      const trustBar = document.querySelector(".hero-trust-bar");
+      if (!ctaButtons || !trustBar) return;
+
+      const baseDelay = showPreloader ? 10.3 : 1.15;
+
+      gsap.set([...ctaButtons.children], { opacity: 0, y: 20 });
+      gsap.set(trustBar, { opacity: 0, y: 15 });
+
+      gsap.to([...ctaButtons.children], {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        delay: baseDelay,
+        ease: "power3.out",
+      });
+
+      gsap.to(trustBar, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        delay: baseDelay + 0.4,
+        ease: "power3.out",
+      });
+    },
+    [showPreloader]
+  );
+
   return (
     <>
       {showPreloader && (
@@ -265,18 +322,33 @@ export default function Home() {
               </Copy>
             </div>
             <div className="hero-gold-line"></div>
-            <AnimatedButton
-              label="Découvrir nos biens"
-              route="/spaces"
-              animateOnScroll={false}
-              delay={showPreloader ? 10.3 : 1.15}
-            />
-            <AnimatedButton
-              label="Nous contacter"
-              route="/connect"
-              animateOnScroll={false}
-              delay={showPreloader ? 10.45 : 1.3}
-            />
+            <div className="hero-cta-buttons">
+              <a
+                href="/spaces"
+                className="hero-cta-primary"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateWithTransition("/spaces");
+                }}
+              >
+                Découvrir nos biens
+              </a>
+              <a
+                href="/connect"
+                className="hero-cta-secondary"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateWithTransition("/connect");
+                }}
+              >
+                Nous contacter
+              </a>
+            </div>
+            <div className="hero-trust-bar">
+              <span>✓ Accompagnement personnalisé</span>
+              <span>✓ Transparence</span>
+              <span>✓ Expertise immobilière</span>
+            </div>
           </div>
         </div>
         <div className="hero-stats">
