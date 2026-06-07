@@ -96,8 +96,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.6rem;
   height: 3.25rem;
-  padding: 0 2.25rem;
+  padding: 0 1rem 0 1.75rem;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
@@ -110,28 +111,55 @@
 }
 
 .hero .hero-cta-primary {
-  background: linear-gradient(135deg, #c8a85d, #d4a853);
-  color: #1a1a1a;
+  background: rgba(242, 237, 230, 0.85);
+  backdrop-filter: blur(10px);
+  color: var(--base-500);
   border: 1px solid transparent;
-  box-shadow: 0 4px 20px rgba(200, 168, 93, 0.25);
 }
 
 .hero .hero-cta-primary:hover {
-  background: linear-gradient(135deg, #d4b56a, #e0c070);
-  box-shadow: 0 6px 30px rgba(200, 168, 93, 0.4);
+  background: rgba(242, 237, 230, 1);
   transform: translateY(-2px);
 }
 
 .hero .hero-cta-secondary {
-  background: transparent;
+  background: rgba(242, 237, 230, 0.15);
+  backdrop-filter: blur(10px);
   color: var(--base-100);
-  border: 1px solid rgba(200, 168, 93, 0.45);
+  border: 1px solid rgba(242, 237, 230, 0.35);
 }
 
 .hero .hero-cta-secondary:hover {
-  background: rgba(200, 168, 93, 0.1);
-  border-color: rgba(200, 168, 93, 0.8);
+  background: rgba(242, 237, 230, 0.3);
+  border-color: rgba(242, 237, 230, 0.6);
   transform: translateY(-2px);
+}
+
+.hero .hero-cta-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.hero .hero-cta-primary .hero-cta-arrow {
+  background: var(--base-500);
+  color: var(--base-100);
+}
+
+.hero .hero-cta-secondary .hero-cta-arrow {
+  background: rgba(242, 237, 230, 0.2);
+  color: var(--base-100);
+}
+
+.hero .hero-cta-primary:hover .hero-cta-arrow,
+.hero .hero-cta-secondary:hover .hero-cta-arrow {
+  transform: translateX(3px);
 }
 
 .hero .hero-trust-bar {
@@ -143,11 +171,12 @@
 }
 
 .hero .hero-trust-bar span {
-  color: rgba(200, 168, 93, 0.6);
+  color: rgba(242, 237, 230, 0.7);
   font-family: "Manrope", sans-serif;
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.02em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .hero .hero-stats {

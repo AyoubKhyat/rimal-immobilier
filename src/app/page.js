@@ -17,6 +17,7 @@ import ClientReviews from "@/components/ClientReviews/ClientReviews";
 import CTAWindow from "@/components/CTAWindow/CTAWindow";
 import Copy from "@/components/Copy/Copy";
 import { useViewTransition } from "@/hooks/useViewTransition";
+import { IoMdArrowForward } from "react-icons/io";
 
 let isInitialLoad = true;
 gsap.registerPlugin(ScrollTrigger, CustomEase);
@@ -324,6 +325,9 @@ export default function Home() {
                 }}
               >
                 Découvrir nos biens
+                <span className="hero-cta-arrow">
+                  <IoMdArrowForward />
+                </span>
               </a>
               <a
                 href="/connect"
@@ -334,6 +338,9 @@ export default function Home() {
                 }}
               >
                 Nous contacter
+                <span className="hero-cta-arrow">
+                  <IoMdArrowForward />
+                </span>
               </a>
             </div>
             <div className="hero-trust-bar">
